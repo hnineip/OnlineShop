@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/dimen_8"
+    app:cardCornerRadius="@dimen/dimen_8"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/country_image"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:src="@drawable/korea1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Korea"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
